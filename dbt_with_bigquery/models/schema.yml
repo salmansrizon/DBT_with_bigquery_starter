@@ -1,0 +1,18 @@
+version: 1
+
+models:
+  - name: customers
+    description: "Customer table"
+    columns:
+      - name: id
+        description: "Primary key to the table"
+        tests:
+          - unique
+      - name: first_name
+        description: "First name of the customer"
+        tests:
+          - not_null
+      - name: last_name
+        description: "Last name of the customer"
+        tests:
+          - not_null
